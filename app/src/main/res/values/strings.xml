@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">My Portfolio App</string>
+    <string name="professional_summary">Highly dedicated, disciplined and versatile with dynamic ability to fit in any
+        working
+        environment. To gain practical experience and enhance my skills as a full stack developer
+        through hands on training opportunities. Seeking to contribute to real-world projects,
+        learn from industry professionals, and further develop my programming abilities.
+        Committed to continuous learning and eager to contribute to success of a dynamic and
+        innovative software development team
+    </string>
+    <string name="lorem_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+        fugiat nulla pariatur.
+    </string>
+    <string name="job_name">{ Android Java Developer }</string>
+    <string name="my_skills">Programming Languages (Java, JavaScript, Python), Agile, Problem Solving, Adaptability,
+        Interpersonal Skills, SQL, Firebase, Tableau, Maths, Microsoft Office, Business Analysis,
+        HTML
+    </string>
+    <string name="middlesex_university_text">Currently immersed in the dynamic world of Information Technology and
+        Business Information Systems at Middlesex University. Embracing the cutting-edge curriculum, I gained advanced
+        insights into the intersection of tech and business. Excited to leverage this knowledge to tackle real-world
+        challenges and contribute meaningfully to the evolving digital landscape.
+    </string>
+    <string name="aptech_text">Successfully completed Aptechs comprehensive program, mastering the foundational aspects
+        of programming. Armed with a solid understanding of core concepts, Im ready to navigate the digital landscape
+        with confidence. Eager to apply my skills and embark on new coding adventures!
+    </string>
+    <string name="lorem_text2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+    </string>
+    <string name="name">Bowei\nTombri</string>
+    <string name="Skills">Skills</string>
+    <string name="current_job_post">Current Job Post</string>
+    <string name="diploma">Computer Science Diploma</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="android_studio_essential_training">Android Studio Essential Training</string>
+    <string name="linkedin_learning">Linkedin Learning</string>
+    <string name="may_2024">May 2024</string>
+    <string name="intro_to_career_skills_in_software_development">Intro to Career Skills in Software Development
+    </string>
+    <string name="advanced_diploma_in_software_engineering">Advanced Diploma in Software Engineering</string>
+    <string name="aptech_education">Aptech Education</string>
+    <string name="may_2023">May 2023</string>
+    <string name="training_amp_certifications"><![CDATA[Training & Certifications]]></string>
+    <string name="email">Email</string>
+    <string name="phone">Phone</string>
+    <string name="address">Address</string>
+    <string name="website">Website</string>
+    <string name="linkedin">Linkedin</string>
+    <string name="tombri_bowei"><![CDATA[&#64; Tombri Bowei]]></string>
+</resources>

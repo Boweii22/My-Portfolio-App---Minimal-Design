@@ -1,0 +1,14 @@
+<!-- res/values/dimens.xml -->
+<resources>
+    <dimen name="contact_heading_text_size">24sp</dimen>
+    <dimen name="contact_heading_padding_bottom">8dp</dimen>
+    <dimen name="contact_intro_text_size">16sp</dimen>
+    <dimen name="contact_intro_padding_bottom">16dp</dimen>
+    <dimen name="contact_margin">16dp</dimen>
+    <dimen name="contact_item_margin_vertical">8dp</dimen>
+    <dimen name="contact_item_elevation">4dp</dimen>
+    <dimen name="contact_item_corner_radius">12dp</dimen>
+    <dimen name="contact_item_padding">8dp</dimen>
+    <dimen name="contact_item_text_margin_start">16dp</dimen>
+    <dimen name="contact_item_text_size">16sp</dimen>
+</resources>

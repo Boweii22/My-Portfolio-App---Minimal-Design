@@ -1,0 +1,570 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:background="@color/white"
+                android:layout_centerVertical="true">
+
+    <TextView
+            android:id="@+id/contactHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact Details"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"/>
+
+    <TextView
+            android:id="@+id/contactIntro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/contactHeading"
+            android:layout_marginTop="8dp"
+            android:text="Get in touch through any of the following methods:"
+            android:textSize="16sp"
+            android:textColor="@color/icon_tint"
+            android:layout_marginStart="16dp"/>
+
+<!--    &lt;!&ndash; Email CardView &ndash;&gt;-->
+<!--    <androidx.cardview.widget.CardView-->
+<!--            android:id="@+id/emailCardview"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/contactIntro"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            android:layout_marginStart="16dp"-->
+<!--            android:layout_marginEnd="16dp"-->
+<!--            android:layout_marginBottom="8dp"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            app:cardCornerRadius="8dp">-->
+
+<!--        <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:paddingStart="16dp"-->
+<!--                android:paddingEnd="16dp"-->
+<!--                android:paddingTop="8dp"-->
+<!--                android:paddingBottom="8dp"-->
+<!--                android:gravity="center_vertical">-->
+
+<!--            <ImageView-->
+<!--                    android:layout_width="24dp"-->
+<!--                    android:layout_height="24dp"-->
+<!--                    android:src="@drawable/icons8_email_24"-->
+<!--                    />-->
+
+<!--            <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="16dp"-->
+<!--                    android:text="tombribowei01@gmail.com"-->
+<!--                    android:textSize="16sp"-->
+<!--                    android:textColor="@color/black"/>-->
+<!--        </LinearLayout>-->
+<!--    </androidx.cardview.widget.CardView>-->
+
+<!--    &lt;!&ndash; Phone CardView &ndash;&gt;-->
+<!--    <androidx.cardview.widget.CardView-->
+<!--            android:id="@+id/phoneCardView"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/emailCardview"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:layout_marginStart="16dp"-->
+<!--            android:layout_marginEnd="16dp"-->
+<!--            app:cardCornerRadius="8dp">-->
+
+<!--        <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:paddingStart="16dp"-->
+<!--                android:paddingEnd="16dp"-->
+<!--                android:paddingTop="8dp"-->
+<!--                android:paddingBottom="8dp"-->
+<!--                android:gravity="center_vertical">-->
+
+<!--            <ImageView-->
+<!--                    android:layout_width="24dp"-->
+<!--                    android:layout_height="24dp"-->
+<!--                    android:src="@drawable/icons8_phone_24"-->
+<!--                    />-->
+
+<!--            <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="16dp"-->
+<!--                    android:text="+44 7990894223"-->
+<!--                    android:textSize="16sp"-->
+<!--                    android:textColor="@color/black"/>-->
+<!--        </LinearLayout>-->
+<!--    </androidx.cardview.widget.CardView>-->
+
+<!--    &lt;!&ndash; Address CardView &ndash;&gt;-->
+<!--    <androidx.cardview.widget.CardView-->
+<!--            android:id="@+id/addressCardView"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/phoneCardView"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:layout_marginStart="16dp"-->
+<!--            android:layout_marginEnd="16dp"-->
+<!--            app:cardCornerRadius="8dp">-->
+
+<!--        <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:paddingStart="16dp"-->
+<!--                android:paddingEnd="16dp"-->
+<!--                android:paddingTop="8dp"-->
+<!--                android:paddingBottom="8dp"-->
+<!--                android:gravity="center_vertical">-->
+
+<!--            <ImageView-->
+<!--                    android:layout_width="24dp"-->
+<!--                    android:layout_height="24dp"-->
+<!--                    android:src="@drawable/baseline_location_on_24"-->
+<!--                    />-->
+
+<!--            <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="16dp"-->
+<!--                    android:text="29 Glebe Crescent, London, United Kingdom"-->
+<!--                    android:textSize="16sp"-->
+<!--                    android:textColor="@color/black"/>-->
+<!--        </LinearLayout>-->
+<!--    </androidx.cardview.widget.CardView>-->
+
+<!--    &lt;!&ndash; Website CardView &ndash;&gt;-->
+<!--    <androidx.cardview.widget.CardView-->
+<!--            android:id="@+id/websiteCardView"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/addressCardView"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:layout_marginStart="16dp"-->
+<!--            android:layout_marginEnd="16dp"-->
+<!--            app:cardCornerRadius="8dp">-->
+
+<!--        <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:paddingStart="16dp"-->
+<!--                android:paddingEnd="16dp"-->
+<!--                android:paddingTop="8dp"-->
+<!--                android:paddingBottom="8dp"-->
+<!--                android:gravity="center_vertical">-->
+
+<!--            <ImageView-->
+<!--                    android:layout_width="24dp"-->
+<!--                    android:layout_height="24dp"-->
+<!--                    android:src="@drawable/icons8_website_24"-->
+<!--                    />-->
+
+<!--            <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="16dp"-->
+<!--                    android:text="https://iboweii.netlify.app/"-->
+<!--                    android:autoLink="web"-->
+<!--                    android:textSize="16sp"-->
+<!--                    android:textColor="@color/black"/>-->
+<!--        </LinearLayout>-->
+<!--    </androidx.cardview.widget.CardView>-->
+
+<!--    &lt;!&ndash; GitHub CardView &ndash;&gt;-->
+<!--    <androidx.cardview.widget.CardView-->
+<!--            android:id="@+id/githubCardView"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/websiteCardView"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:layout_marginStart="16dp"-->
+<!--            android:layout_marginEnd="16dp"-->
+<!--            app:cardCornerRadius="8dp">-->
+
+<!--        <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:paddingStart="16dp"-->
+<!--                android:paddingEnd="16dp"-->
+<!--                android:paddingTop="8dp"-->
+<!--                android:paddingBottom="8dp"-->
+<!--                android:gravity="center_vertical">-->
+
+<!--            <ImageView-->
+<!--                    android:layout_width="24dp"-->
+<!--                    android:layout_height="24dp"-->
+<!--                    android:src="@drawable/icons8_github_24"/>-->
+
+<!--            <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="16dp"-->
+<!--                    android:text="github.com/username"-->
+<!--                    android:textSize="16sp"-->
+<!--                    android:textColor="@color/black"/>-->
+<!--        </LinearLayout>-->
+<!--    </androidx.cardview.widget.CardView>-->
+
+<!--    &lt;!&ndash; LinkedIn CardView &ndash;&gt;-->
+<!--    <androidx.cardview.widget.CardView-->
+<!--            android:id="@+id/linkedinCardView"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/githubCardView"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:layout_marginStart="16dp"-->
+<!--            android:layout_marginEnd="16dp"-->
+<!--            app:cardCornerRadius="8dp">-->
+
+<!--        <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:paddingStart="16dp"-->
+<!--                android:paddingEnd="16dp"-->
+<!--                android:paddingTop="8dp"-->
+<!--                android:paddingBottom="8dp"-->
+<!--                android:gravity="center_vertical">-->
+
+<!--            <ImageView-->
+<!--                    android:layout_width="24dp"-->
+<!--                    android:layout_height="24dp"-->
+<!--                    android:src="@drawable/icons8_linkedin_30"-->
+<!--                    />-->
+
+<!--            <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="16dp"-->
+<!--                    android:text="linkedin.com/in/username"-->
+<!--                    android:textSize="16sp"-->
+<!--                    android:textColor="@color/black"/>-->
+<!--        </LinearLayout>-->
+<!--    </androidx.cardview.widget.CardView>-->
+
+<!--    &lt;!&ndash; Dribbble CardView &ndash;&gt;-->
+<!--    <androidx.cardview.widget.CardView-->
+<!--            android:id="@+id/dribbleCardView"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/linkedinCardView"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:layout_marginStart="16dp"-->
+<!--            android:layout_marginEnd="16dp"-->
+<!--            android:layout_marginBottom="16dp"-->
+<!--            app:cardCornerRadius="8dp">-->
+
+<!--        <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:paddingStart="16dp"-->
+<!--                android:paddingEnd="16dp"-->
+<!--                android:paddingTop="8dp"-->
+<!--                android:paddingBottom="8dp"-->
+<!--                android:gravity="center_vertical">-->
+
+<!--            <ImageView-->
+<!--                    android:layout_width="24dp"-->
+<!--                    android:layout_height="24dp"-->
+<!--                    android:src="@drawable/icons8_dribble_24"-->
+<!--                    />-->
+
+<!--            <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="16dp"-->
+<!--                    android:text="dribbble.com/username"-->
+<!--                    android:textSize="16sp"-->
+<!--                    android:textColor="@color/black"/>-->
+<!--        </LinearLayout>-->
+<!--    </androidx.cardview.widget.CardView>-->
+
+    <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="7dp"
+            android:layout_below="@+id/contactIntro"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:padding="15dp"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="8dp">
+
+        <LinearLayout
+                android:id="@+id/contactDetailsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <ImageView
+                    android:id="@+id/contactEmail"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_margin="12dp"
+                    android:src="@drawable/icons8_email_24"/>
+
+            <LinearLayout android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_margin="12dp"
+                          android:orientation="vertical">
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="Email"
+                          android:textStyle="bold"
+                          android:textSize="15sp"
+                          android:textColor="@color/black" />
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="tombribowei01@gmail.com"
+                          android:textColor="@color/icon_tint" />
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                <ImageView
+                        android:id="@+id/contactPhone"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_margin="12dp"
+                        android:src="@drawable/icons8_phone_24"/>
+
+                <LinearLayout android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:layout_margin="12dp"
+                              android:orientation="vertical">
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="Phone"
+                              android:textStyle="bold"
+                              android:textSize="15sp"
+                              android:textColor="@color/black" />
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="+44 7990894223"
+                              android:textColor="@color/icon_tint" />
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                <ImageView
+                        android:id="@+id/contactAddress"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_margin="12dp"
+                        android:src="@drawable/baseline_location_on_24"/>
+
+                <LinearLayout android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:layout_margin="12dp"
+                              android:orientation="vertical">
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="Address"
+                              android:textStyle="bold"
+                              android:textSize="15sp"
+                              android:textColor="@color/black" />
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="29 Glebe Crescent London, United Kingdom"
+                              android:textColor="@color/icon_tint" />
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                <ImageView
+                        android:id="@+id/contactWebsite"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_margin="12dp"
+                        android:src="@drawable/icons8_website_24"/>
+
+                <LinearLayout android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:layout_margin="12dp"
+                              android:orientation="vertical">
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="Website"
+                              android:textStyle="bold"
+                              android:textSize="15sp"
+                              android:textColor="@color/black" />
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="https://iboweii.netlify.app/"
+                              android:autoLink="web"
+                              android:textColor="@color/icon_tint" />
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                <ImageView
+                        android:id="@+id/contactGithub"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_margin="12dp"
+                        android:src="@drawable/icons8_github_24"/>
+
+                <LinearLayout android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:layout_margin="12dp"
+                              android:orientation="vertical">
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="Github"
+                              android:textStyle="bold"
+                              android:textSize="15sp"
+                              android:textColor="@color/black" />
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="https://github.com/Boweii22"
+                              android:autoLink="web"
+                              android:textColor="@color/icon_tint" />
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                <ImageView
+                        android:id="@+id/contactLinkedIn"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_margin="12dp"
+                        android:src="@drawable/icons8_linkedin_30"/>
+
+                <LinearLayout android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:layout_margin="12dp"
+                              android:orientation="vertical">
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="LinkedIn"
+                              android:textStyle="bold"
+                              android:textSize="15sp"
+                              android:textColor="@color/black" />
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="https://www.linkedin.com/in/tombri-bowei-176912294/"
+                              android:autoLink="web"
+                              android:textColor="@color/icon_tint" />
+
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                <ImageView
+                        android:id="@+id/contactDribble"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_margin="12dp"
+                        android:src="@drawable/icons8_dribble_24"/>
+
+                <LinearLayout android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:layout_margin="12dp"
+                              android:orientation="vertical">
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="Dribble"
+                              android:textStyle="bold"
+                              android:textSize="15sp"
+                              android:textColor="@color/black" />
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="https://dribbble.com/Boweii"
+                              android:autoLink="web"
+                              android:textColor="@color/icon_tint" />
+
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+

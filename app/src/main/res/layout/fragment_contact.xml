@@ -1,0 +1,50 @@
+<!-- res/layout/fragment_contact.xml -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   android:background="@color/white"
+                                                   tools:context=".contact.ContactFragment">
+
+    <TextView
+            android:id="@+id/contactHeading"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Contact Details"
+            android:textSize="@dimen/contact_heading_text_size"
+            android:textStyle="bold"
+            android:paddingBottom="@dimen/contact_heading_padding_bottom"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="@dimen/contact_margin"
+            android:layout_marginEnd="@dimen/contact_margin"/>
+
+    <TextView
+            android:id="@+id/contactIntro"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Get in touch through any of the following methods:"
+            android:textSize="@dimen/contact_intro_text_size"
+            android:paddingBottom="@dimen/contact_intro_padding_bottom"
+            android:textColor="@color/icon_tint"
+            app:layout_constraintTop_toBottomOf="@id/contactHeading"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="@dimen/contact_margin"
+            android:layout_marginEnd="@dimen/contact_margin"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/contactRecyclerView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:clipToPadding="false"
+            app:layout_constraintTop_toBottomOf="@id/contactIntro"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="@dimen/contact_margin"
+            android:layout_marginEnd="@dimen/contact_margin"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
